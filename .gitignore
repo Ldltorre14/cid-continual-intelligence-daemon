@@ -1,29 +1,11 @@
-# Virtual Environment
-venv/
-.venv/
-env/
-ENV/
-
-# Python Bytecode & Cache
+# === Python ===
 __pycache__/
 *.py[cod]
 *$py.class
+venv/
+.venv/
+ENV/
 
-# Environment Variables / Secrets
-.env
-.flaskenv
-
-# IDE / Editor Files
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS Generated Files
-.DS_Store
-Thumbs.db
-
-# Build & Distribution
-dist/
-build/
-*.egg-info/
+# === Rust ===
+target/
+daemon/target/
