@@ -1,0 +1,16 @@
+syntax = "proto3";
+package brain;
+
+// El servicio que ofrecerá el cerebro de Python al daemon de Rust
+service BrainService {
+    rpc ProcessData (DataRequest) returns (DataResponse);
+}
+
+message DataRequest {
+    string prompt = 1;
+}
+
+message DataResponse {
+    string response_text = 1;
+    bool success = 2;
+}
