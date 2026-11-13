@@ -1,11 +1,27 @@
-# === Python ===
-__pycache__/
-*.py[cod]
-*$py.class
+# --- Python (brain/) ---
 venv/
-.venv/
-ENV/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
 
-# === Rust ===
-target/
-daemon/target/
+# --- C++ (daemon/) ---
+daemon/build/
+
+# --- Models (large weights; see note below) ---
+models/*
+!models/.gitkeep
+
+# --- Secrets / local config ---
+.env
+# config.yaml     # uncomment if it holds keys or machine-specific paths
+
+# --- Archives ---
+*.zip
+
+# --- Editor / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
